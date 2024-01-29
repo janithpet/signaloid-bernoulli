@@ -29,15 +29,6 @@ double measure_airfoil_area(void) {
 }
 
 /**
- * @brief Measures the air density in \f$kgm^{3}\f$.
- *
- * @return An uncertain measurement of the surface area of the airfoil.
- */
-double measure_airfoil_area(void) {
-	return 0.0;
-}
-
-/**
  * @brief Calculates the lift of an airfoil using Bernoulli's Principle.
  *
  * The lift of an airfoil can by estimated by using Bernoulli's Principle.
@@ -59,6 +50,13 @@ double calculate_lift(double velocity_top, double velocity_bottom,
 }
 
 int main(void) {
-	double velocity_top = 0.0;
+	double velocity_top    = measure_velocity_top();
+	double velocity_bottom = measure_velocity_bottom();
+	double air_density     = measure_airfoil_area();
+	double area            = measure_airfoil_area();
+
+	double lift            = calculate_lift(velocity_top, velocity_bottom, air_density, area);
+
+	printf("The lift of the airfoil is %fN.\n", lift);
 	return 0;
 }
