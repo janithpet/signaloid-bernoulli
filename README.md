@@ -23,7 +23,7 @@ The problem at hand is to use Bernoulli's Principle to calculate the lift genera
 ### Assumptions about the pitot-tubes
 - They operate using a differential pressure sensor. Therefore, they can directly measure the difference between the static pressure and the stagnation pressure (see [Bernoulli's Principle](#bernoullis-principle) section below).
 - They have a 0.5% full-scale error [[1]](https://www.surreysensors.com/article/uncertain-pitot-static-probe/).
-- They have a rangoe 0-250Pa [[1]](https://www.surreysensors.com/article/uncertain-pitot-static-probe/).
+- They have a rangoe 0-3650 $Pa$ [[1]](https://www.surreysensors.com/article/uncertain-pitot-static-probe/).
 
 ## Theory
 ### Bernoulli's Principle
@@ -59,7 +59,9 @@ Since $u_{bottom} < u_{top} \implies \Delta p_{wing} < 0$, i.e. the pressure bel
 *This simple model is known to give sufficiently correct results [\[2](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/bernoulli-and-newton/),[3\]](https://www3.eng.cam.ac.uk/outreach/Project-resources/Wind-turbine/howwingswork.pdf), but isn't necessarily the most physically-correct model [[3]](https://www3.eng.cam.ac.uk/outreach/Project-resources/Wind-turbine/howwingswork.pdf).*
 
 ## Incorporating measurement uncertainty
+Measurements are inherently uncertain. We therefore incorporate uncertainty in the measurement of velocity using the pitot-tubes. See [the section on assumptions](#assumptions-about-the-pitot-tubes) for the uncertainty values we used.
 
+In the implementation, we incorporate uncertainty using the [Signaloid UxHw Hardware API](https://docs.signaloid.io/docs/hardware-api/). We use the function `UxHwDoubleUniformDist` function to add uniform noise.
 
 ## Usage
 This repository can be run locally on your own machine (tested on macOS 14.0) and on the Signaloid Cloud Developer Platform.
