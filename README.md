@@ -47,11 +47,11 @@ $$u = \sqrt{\frac{2\Delta p_{pitot}}{\rho}}.$$
 ### Measuring lift using Bernoulli's Principle
 A simple model of how a wing works is that the airfoil causes the air to move faster above the wing than below it. Let $u_{top}$ and $u_{bottom}$ be the velocities of the air above and below the wing respectively. Then, Bernoulli's Principle gives us:
 
-$$P^{static}_{top} + \frac{1}{2}\rho u_{top}^2 = P^{static}_{bottom} + \frac{1}{2}\rho u_{bottom}^2.$$
+$$P_{\text{static, top}} + \frac{1}{2}\rho u_{top}^2 = P_{\text{static, bottom}} + \frac{1}{2}\rho u_{bottom}^2.$$
 
 Therefore, the difference in pressure between the top and bottom of the wing, $\Delta p_{wing}$ is given by:
 
-$$\Delta p_{wing} = P^{static}_{top} - P^{static}_{bottom} = \frac{1}{2}\rho (u_{bottom}^2 - u_{top}^2).$$
+$$\Delta p_{wing} = P_{\text{static, top}} - P_{\text{static, bottom}} = \frac{1}{2}\rho (u_{bottom}^2 - u_{top}^2).$$
 
 Since $u_{bottom} < u_{top} \implies \Delta p_{wing} < 0$, i.e. the pressure below the wing is higher than the pressure above the wing. This pressure difference acts on the surface area of the wing an upward force that is called lift.
 
