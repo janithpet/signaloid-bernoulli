@@ -29,41 +29,42 @@ The problem at hand is to use Bernoulli's Principle to calculate the lift genera
 ### Bernoulli's Principle
 Bernoulli's Principle is a key relationship in fluid dynamics that can be derived from the conservation of energy. It is generally applied to ideal fluids that are incompressible and inviscid. If we assume that any variations in height is neglegible, then Bernoulli's Principle simply states the sum of the static and dynamic pressures are constant:
 
-$$P^{static} + P^{dynamic} = P^{stagnation} = constant,$$
+$$p + p^{dyn} = p^{stag} = constant,$$
 where
-- $P^{static}$ is the static pressure of the fluid. This is the pressure value we obtain if we measure the pressure of a moving fluid.
-- $P^{dynamic}$ is the dynamic pressure of the fluid. This is the 'kinetic energy' component of the fluid. If the velocity of the fluid at a point is $u$, then the dynamic pressure is
+- $p$ is the static pressure of the fluid. This is the pressure value we obtain if we measure the pressure of a moving fluid.
+- $p^{dyn}$ is the dynamic pressure of the fluid. This is the 'kinetic energy' component of the fluid. If the velocity of the fluid at a point is $u$, then the dynamic pressure is
 
-$$P^{dynamic} = \frac{1}{2}\rho u^2,$$
+$$p^{dyn} = \frac{1}{2}\rho u^2,$$
 where $\rho$ is the density of the fluid.
 
-- $P^{stagnation}$ is the stagnation pressure of the fluid. This is the pressure value we obtain if we measure the pressure of a fluid that is not moving. This is also called the 'total pressure' of the fluid.
+- $p^{stag}$ is the stagnation pressure of the fluid. This is the pressure value we obtain if we measure the pressure of a fluid that is not moving. This is also called the 'total pressure' of the fluid.
 
 ### Pitot-tubes
-A pitot-tube is a device that measures the velocity of a fluid at a point. It does this by measuring the difference $\Delta p_{pitot}$ between the static pressure $P^{static}$ and the stagnation pressure $P^{stagnation}$. This gives us the dynamic pressure from which the velocity of the fluid $u$ is given by:
+A pitot-tube is a device that measures the velocity of a fluid at a point. It does this by measuring the difference $\Delta p_{pitot}$ between the static pressure $p$ and the stagnation pressure $p^{stag}$. This gives us the dynamic pressure from which the velocity of the fluid $u$ is given by:
 
 $$u = \sqrt{\frac{2\Delta p_{pitot}}{\rho}}.$$
 
 ### Measuring lift using Bernoulli's Principle
 A simple model of how a wing works is that the airfoil causes the air to move faster above the wing than below it. Let $u_{top}$ and $u_{bottom}$ be the velocities of the air above and below the wing respectively. Then, Bernoulli's Principle gives us:
 
-$$P_{\text{static, top}} + \frac{1}{2}\rho u_{top}^2 = P_{\text{static, bottom}} + \frac{1}{2}\rho u_{bottom}^2.$$
+$$p_{top} + \frac{1}{2}\rho u_{top}^2 = p_{bottom} + \frac{1}{2}\rho u_{bottom}^2.$$
 
 Therefore, the difference in pressure between the top and bottom of the wing, $\Delta p_{wing}$ is given by:
 
-$$\Delta p_{wing} = P_{\text{static, top}} - P_{\text{static, bottom}} = \frac{1}{2}\rho (u_{bottom}^2 - u_{top}^2).$$
+$$\Delta p_{wing} = p_{top} - p_{bottom} = \frac{1}{2}\rho (u_{bottom}^2 - u_{top}^2).$$
 
 Since $u_{bottom} < u_{top} \implies \Delta p_{wing} < 0$, i.e. the pressure below the wing is higher than the pressure above the wing. This pressure difference acts on the surface area of the wing an upward force that is called lift.
 
-Note: This simple model is known to give sufficiently correct results [\[2](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/bernoulli-and-newton/),[3\]](https://www3.eng.cam.ac.uk/outreach/Project-resources/Wind-turbine/howwingswork.pdf), but isn't necessarily the most physically-correct model [[3]](https://www3.eng.cam.ac.uk/outreach/Project-resources/Wind-turbine/howwingswork.pdf).
+*This simple model is known to give sufficiently correct results [\[2](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/bernoulli-and-newton/),[3\]](https://www3.eng.cam.ac.uk/outreach/Project-resources/Wind-turbine/howwingswork.pdf), but isn't necessarily the most physically-correct model [[3]](https://www3.eng.cam.ac.uk/outreach/Project-resources/Wind-turbine/howwingswork.pdf).*
 
 ## Incorporating measurement uncertainty
 
 
 ## Usage
+This repository can be run locally on your own machine (tested on macOS 14.0) and on the Signaloid Cloud Developer Platform.
 
 ### Local
-To run this code locally, first clone the repository. Then, run
+To run this code locally, first clone the repository. Then, run the following from the root of the repository:
 ```bash
 make run
 ```
@@ -74,7 +75,7 @@ The output of this looks:
 
 *The `local` version of this code doesn't contain any uncertainty because it is generally only used to debug. All distributions of uncertain values are collapsed to their mean values.*
 
-Other `make` commands include `make clean` to remove all generated files, `make docs` to generate the documentation and `make build` to build the object files and final executable.
+Other `make` commands include `make clean` to remove all generated files, `make docs` to generate the documentation, and `make build` to build the object files and final executable.
 
 ### Signaloid Cloud Developer Platform
 To run on the Signaloid Cloud Developer Platform, simply click on the `Add to Signaloid` button on top of this README. This will add this repository to your Signaloid Cloud Developer Platform account. You can then run the code by clicking on the `Run` button on the repository page.
