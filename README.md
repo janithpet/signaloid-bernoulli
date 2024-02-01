@@ -13,7 +13,7 @@ The problem at hand is to use Bernoulli's Principle to calculate the lift genera
 
 ### Assumptions about the wing and simulated 'test' setup
 - The airfoil is NACA-6412. We assumed this to calculate what realistic fluid velocities above and below the airfoil are. The NACA-6412 airfoil looks like:
-  <img width="874" alt="image" src="https://github.com/janithpet/signaloid-bernoulli/assets/22471198/adae13cd-c746-4313-a2d1-bf0a870520a5">
+  <img width="874" alt="image" src="docs/assets/wing.png">
 - The surface area of the airfoil is $1$ $m^2$.
 - The wing is assumed to be setup in such a way that 3D effects are neglegible. Therefore, the wing is treated as if it is 2D.
 - The air speed is constant at 0.1Ma $\sim$ $34.3$ $ms^{-1}$.
@@ -72,7 +72,7 @@ make run
 
 The output of this looks:
 
-<img width="349" alt="image" src="https://github.com/janithpet/signaloid-bernoulli/assets/22471198/496f2a8a-56eb-434d-b973-092073c32f8e">
+![image]("docs/assets/local.png")
 
 *The `local` version of this code doesn't contain any uncertainty because it is generally only used to debug. All distributions of uncertain values are collapsed to their mean values.*
 

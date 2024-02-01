@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['pitot_2dtube_2ec_0',['pitot-tube.c',['../pitot-tube_8c.html',1,'']]],
-  ['pitot_2dtube_2eh_1',['pitot-tube.h',['../pitot-tube_8h.html',1,'']]],
-  ['pitot_5ftube_2',['pitot_tube',['../pitot-tube_8c.html#afcc832e290c7aca549bf32c7f2bfec25',1,'pitot_tube(double true_pressure_difference, double fluid_density):&#160;pitot-tube.c'],['../pitot-tube_8h.html#afcc832e290c7aca549bf32c7f2bfec25',1,'pitot_tube(double true_pressure_difference, double fluid_density):&#160;pitot-tube.c']]],
-  ['pitot_5ftube_5ferror_5ffull_5fscale_3',['PITOT_TUBE_ERROR_FULL_SCALE',['../pitot-tube_8c.html#acc66c08ce98f2a10730ce29ce9ab291e',1,'pitot-tube.c']]],
-  ['pitot_5ftube_5frange_5fmax_4',['PITOT_TUBE_RANGE_MAX',['../pitot-tube_8c.html#acf53275e7f5393c538f16e9952adf23e',1,'pitot-tube.c']]],
-  ['pitot_5ftube_5frange_5fmin_5',['PITOT_TUBE_RANGE_MIN',['../pitot-tube_8c.html#a286e4182afe613a653db0ab927baf869',1,'pitot-tube.c']]]
+  ['main_0',['main',['../main_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main.c']]],
+  ['main_2ec_1',['main.c',['../main_8c.html',1,'']]],
+  ['measure_5fairfoil_5farea_2',['measure_airfoil_area',['../main_8c.html#a3934d8a9d28b992c2532906670beb791',1,'main.c']]],
+  ['measure_5fvelocity_5fbottom_3',['measure_velocity_bottom',['../main_8c.html#a4499f5f7baddd2dea6f9ae6980b9cc58',1,'main.c']]],
+  ['measure_5fvelocity_5ftop_4',['measure_velocity_top',['../main_8c.html#a7414371c9acf569f41266a43cb03c2fc',1,'main.c']]]
 ];

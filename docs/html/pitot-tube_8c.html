@@ -119,18 +119,18 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Simulates a Pitot tube. </p>
-<p >A Pitot tube is a device used to measure the velocity of a fluid. It uses Bernoulli's Principle to calculate the dynamic pressure of a fluid by measuring the difference between the static pressure and the stagnation (total) pressure. This difference in presesure <img class="formulaInl" alt="$\Delta p$" src="form_28.png" width="16" height="13"/> can be measured using a pressure transducer. Then, given the density of the fluid <img class="formulaInl" alt="$\rho$" src="form_2.png" width="8" height="9"/>, the velocity of the fluid <img class="formulaInl" alt="$v$" src="form_27.png" width="8" height="6"/> can be calculated using:</p>
+<p >A Pitot tube is a device used to measure the velocity of a fluid. It uses Bernoulli's Principle to calculate the dynamic pressure of a fluid by measuring the difference between the static pressure and the stagnation (total) pressure. This difference in presesure <img class="formulaInl" alt="$\Delta p$" src="form_10.png" width="16" height="13"/> can be measured using a pressure transducer. Then, given the density of the fluid <img class="formulaInl" alt="$\rho$" src="form_4.png" width="8" height="9"/>, the velocity of the fluid <img class="formulaInl" alt="$v$" src="form_11.png" width="8" height="6"/> can be calculated using:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[v = \sqrt{\frac{2\Delta p}{\rho}}\]" src="form_26.png" width="63" height="38"/>
+<img class="formulaDsp" alt="\[v = \sqrt{\frac{2\Delta p}{\rho}}\]" src="form_12.png" width="63" height="38"/>
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">true_pressure_difference</td><td>The true pressure difference that is to be measured by the pressure transducer in <img class="formulaInl" alt="$Pa$" src="form_25.png" width="16" height="10"/>. </td></tr>
-    <tr><td class="paramname">fluid_density</td><td>The density of the fluid in <img class="formulaInl" alt="$kgm^{-3}$" src="form_9.png" width="36" height="14"/>.</td></tr>
+    <tr><td class="paramname">true_pressure_difference</td><td>The true pressure difference that is to be measured by the pressure transducer in <img class="formulaInl" alt="$Pa$" src="form_13.png" width="16" height="10"/>. </td></tr>
+    <tr><td class="paramname">fluid_density</td><td>The density of the fluid in <img class="formulaInl" alt="$kgm^{-3}$" src="form_8.png" width="36" height="14"/>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The uncertain velocity of the fluid in <img class="formulaInl" alt="$ms^{-1}$" src="form_8.png" width="30" height="11"/> after adding measurement uncertainty of the pressure transducer. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The uncertain velocity of the fluid in <img class="formulaInl" alt="$ms^{-1}$" src="form_0.png" width="30" height="11"/> after adding measurement uncertainty of the pressure transducer. </dd></dl>
 
 </div>
 </div>
