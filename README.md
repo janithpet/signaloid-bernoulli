@@ -78,10 +78,10 @@ The output of this looks:
 Other `make` commands include `make clean` to remove all generated files, `make docs` to generate the documentation, and `make build` to build the object files and final executable.
 
 ### Signaloid Cloud Developer Platform
-To run on the Signaloid Cloud Developer Platform, simply click on the `Add to Signaloid` button on top of this README. This will add this repository to your Signaloid Cloud Developer Platform account. You can then run the code by clicking on the `Run` button on the repository page.
+To run on the Signaloid Cloud Developer Platform, simply click on the [`Add to Signaloid`](https://signaloid.io/repositories?connect=https://github.com/janithpet/signaloid-bernoulli#gh-dark-mode-only) button on top of this README. This will add this repository to your Signaloid Cloud Developer Platform account. You can then run the code by clicking on the `Run` button on this repository's card on Repository page.
 
 ## Implementation Details
-For documentation, follow the docstrings in the code, or open the documentation in `docs/html/index.html` of this repository.
+For documentation, follow the docstrings in the code, or open the documentation in [`docs/html/index.html`](docs/html/index.html) of this repository.
 
 In the rest of this section, we detail how we obtained the values of the velocities of the air and the uncertainty in the measuring devices.
 
