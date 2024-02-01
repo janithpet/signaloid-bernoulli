@@ -18,7 +18,7 @@ The problem at hand is to use Bernoulli's Principle to calculate the lift genera
 - The wing is assumed to be setup in such a way that 3D effects are neglegible. Therefore, the wing is treated as if it is 2D.
 - The air speed is constant at 0.1Ma $\sim$ $34.3$ $ms^{-1}$.
 - The airfoil is at an angle of attack of $5^\circ$.
-- Two pitot tubes of the same specification are attached to the top and bottom of the airfoil (at approximately 30% of the chord length); see section below for an analysis if this assumption.
+- Two pitot tubes of the same specification are attached to the top and bottom of the airfoil (at approximately 30% of the chord length); see [section below](#are-2-pitot-tubes-enough) for an analysis if this assumption.
 
 ### Assumptions about the pitot tubes
 - They operate using a differential pressure sensor. Therefore, they can directly measure the difference between the static pressure and the stagnation pressure (see [Bernoulli's Principle](#bernoullis-principle) section below).
