@@ -51,6 +51,7 @@ double measure_airfoil_area(void) { return 1.0; }
  * @return The lift of the airfoil in \f$N\f$.
  */
 double calculate_lift(double velocity_top, double velocity_bottom, double air_density, double area) {
+	printf("%f\n", pow(velocity_top, 2) - pow(velocity_bottom, 2));
 	return 0.5 * air_density * area * (pow(velocity_top, 2) - pow(velocity_bottom, 2));
 }
 
@@ -60,6 +61,9 @@ int main(void) {
 	double area            = measure_airfoil_area();
 
 	double lift            = calculate_lift(velocity_top, velocity_bottom, AIR_DENSITY, area);
+
+	printf("%d\n", velocity_top);
+	printf("%d\n", velocity_bottom);
 
 	printf("The lift of the airfoil is %fN.\n", lift);
 	return 0;
