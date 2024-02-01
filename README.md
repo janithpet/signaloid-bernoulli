@@ -12,6 +12,7 @@ The problem at hand is to use Bernoulli's Principle to calculate the lift genera
 
 ### Assumptions about the wing and simulated 'test' setup
 - The airfoil is NACA 6412. This looks like:
+  <img width="874" alt="image" src="https://github.com/janithpet/signaloid-bernoulli/assets/22471198/adae13cd-c746-4313-a2d1-bf0a870520a5">
 - The surface area of the airfoil is 1m$^2$.
 - The air speed is constant at 0.1Ma $\sim$ 34.3 m/s.
 - The airfoil is at an angle of attack of 5 degrees.
