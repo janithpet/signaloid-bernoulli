@@ -29,7 +29,6 @@ $(BUILD)/main: $(BUILD)/main.o $(OBJECTS)
 	@$(CC) $(CFLAGS) $(LDFLAGS) $^ -o $@
 
 run : $(BUILD)/main
-	echo $(OBJECTS)
 	$(BUILD)/main
 
 docs : $(DOCS)/config
