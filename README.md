@@ -11,17 +11,17 @@ The problem at hand is to use Bernoulli's Principle to calculate the lift genera
 - The fluid (air) is inviscid.
 
 ### Assumptions about the wing and simulated 'test' setup
-- The airfoil is NACA 6412. This looks like:
+- The airfoil is NACA-6412. We assumed this to calculate what realistic fluid velocities above and below the airfoil are. The NACA-6412 airfoil looks like:
   <img width="874" alt="image" src="https://github.com/janithpet/signaloid-bernoulli/assets/22471198/adae13cd-c746-4313-a2d1-bf0a870520a5">
 - The surface area of the airfoil is 1m$^2$.
 - The air speed is constant at 0.1Ma $\sim$ 34.3 m/s.
 - The airfoil is at an angle of attack of 5 degrees.
-- Two pitot-tubes are attached to the top and bottom of the airfoil; see section below for an analysis if this assumption.
+- Two pitot-tubes of the same specification are attached to the top and bottom of the airfoil (at approximately 30% of the chord length); see section below for an analysis if this assumption.
 
 ### Assumptions about the pitot-tubes
+- They operate using a differential pressure sensor. Therefore, they can directly measure the difference between the static pressure and the stagnation pressure (see [Bernoulli's Principle section below](###Bernoulli's Principle)).
 - They have a 0.5% full-scale error [[1]](https://www.surreysensors.com/article/uncertain-pitot-static-probe/).
 - They have a rangoe 0-250Pa [[1]](https://www.surreysensors.com/article/uncertain-pitot-static-probe/).
-
 
 ## Theory
 ### Bernoulli's Principle
@@ -61,12 +61,40 @@ Note: This simple model is known to give sufficiently correct results [\[2](http
 ## Usage
 
 ### Local
+To run this code locally, first clone the repository. Then, run
+```bash
+make run
+```
+
+*The `local` version of this code doesn't contain any uncertainty because it is generally only used to debug. All distributions of uncertain values are collapsed to their mean values.*
+
+Other `make` commands include `make clean` to remove all generated files, `make docs` to generate the documentation and `make build` to build the object files and final executable.
 
 ### Signaloid Cloud Developer Platform
+To run on the Signaloid Cloud Developer Platform, simply click on the `Add to Signaloid` button on top of this README. This will add this repository to your Signaloid Cloud Developer Platform account. You can then run the code by clicking on the `Run` button on the repository page.
+
+## Implementation Details
+For documentation, follow the docstrings in the code, or open the documentation in `docs/html/index.html` of this repository.
+
+In the rest of this section, we detail how we obtained the values of the velocities of the air and the uncertainty in the measuring devices.
+
+### The velocities of the air
+The velocity of the air above and below the airfoil was determined using [Xfoil [4]](https://web.mit.edu/drela/Public/web/xfoil/). We obtained the distributions of the coefficient of pressure $C_p$ on the airfoil on the top and bottom surfaces. The velocities were then calculated using the following formula [[5]](https://www.mheducation.com/highered/product/fundamentals-aerodynamics-anderson/M9781259129919.html):
+$$u = u_\infty \sqrt{1 - C_p},$$
+where $u_\infty$ is the free-stream velocity of the air (we assumed this was 0.1Ma). In fact, this equation itself is also derived from Bernoulli's Principle by applying the definition of $C_p$.
+
+The complete simulated values of $C_p$ can be found in `cp.dat`.
+### The uncertainty in the measuring devices
+- The range of the pitot-tube was obtained as twice the maximum pressure difference that would been caused by the velocities obtained above.
+- The uncertainty of the pitot-tube was obtained using [[1]](ttps://www.surreysensors.com/article/uncertain-pitot-static-probe/).
 
 ## References
 [[1] https://www.surreysensors.com/article/uncertain-pitot-static-probe/](https://www.surreysensors.com/article/uncertain-pitot-static-probe/)
 
 [[2] *NASA*; Bernoulli and Newton (Beginner's Guide to Aeronautics)](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/bernoulli-and-newton/)
 
-[[3] *Holger Babinsky*; How do wings work?](https://www3.eng.cam.ac.uk/outreach/Project-resources/Wind-turbine/howwingswork.pdf)
+[[3] *Babinsky, Holger*; How do wings work?](https://www3.eng.cam.ac.uk/outreach/Project-resources/Wind-turbine/howwingswork.pdf)
+
+[[4] *Drela, Mark*; XFoil: Subsonic Airfoil Development System](https://web.mit.edu/drela/Public/web/xfoil/)
+
+[[5] *Anderson, John D.* Fundamentals of Aerodynamics](https://www.mheducation.com/highered/product/fundamentals-aerodynamics-anderson/M9781259129919.html)
