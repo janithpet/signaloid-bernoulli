@@ -59,8 +59,6 @@ Since $u_{bottom} < u_{top} \implies \Delta p_{wing} < 0$, i.e. the pressure bel
 $$L = \Delta p_{wing} \times S = \frac{1}{2}\rho S(u_{top}^2 - u_{bottom}^2),$$
 where $S$ is the surface area ($\text{chord length} \times \text{span}$) of the wing.
 
-
-
 *This simple model is known to give approximately correct results [\[2](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/bernoulli-and-newton/),[3\]](https://www3.eng.cam.ac.uk/outreach/Project-resources/Wind-turbine/howwingswork.pdf), but isn't necessarily the most physically-correct model of how lift is generated [[3]](https://www3.eng.cam.ac.uk/outreach/Project-resources/Wind-turbine/howwingswork.pdf).*
 
 ## Incorporating measurement uncertainty
@@ -79,7 +77,7 @@ make run
 
 The output of this should look like:
 
-<img width="349" alt="image" src="https://github.com/janithpet/signaloid-bernoulli/assets/22471198/496f2a8a-56eb-434d-b973-092073c32f8e">
+<img width="288" alt="image" src="https://github.com/janithpet/signaloid-bernoulli/assets/22471198/03b81de1-bdaf-4b4b-835c-8eefb754cd24">
 
 *The `local` version of this code doesn't contain any uncertainty because it is generally only used to debug. All distributions of uncertain values are collapsed to their mean values.*
 
