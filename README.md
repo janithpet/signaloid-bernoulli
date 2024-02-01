@@ -19,7 +19,7 @@ The problem at hand is to use Bernoulli's Principle to calculate the lift genera
 - Two pitot-tubes of the same specification are attached to the top and bottom of the airfoil (at approximately 30% of the chord length); see section below for an analysis if this assumption.
 
 ### Assumptions about the pitot-tubes
-- They operate using a differential pressure sensor. Therefore, they can directly measure the difference between the static pressure and the stagnation pressure (see [Bernoulli's Principle section below](#Bernoulli's Principle)).
+- They operate using a differential pressure sensor. Therefore, they can directly measure the difference between the static pressure and the stagnation pressure (see [Bernoulli's Principle section below](#bernoulli's-principle)).
 - They have a 0.5% full-scale error [[1]](https://www.surreysensors.com/article/uncertain-pitot-static-probe/).
 - They have a rangoe 0-250Pa [[1]](https://www.surreysensors.com/article/uncertain-pitot-static-probe/).
 
