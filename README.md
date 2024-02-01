@@ -68,6 +68,9 @@ To run this code locally, first clone the repository. Then, run
 make run
 ```
 
+The output of this looks:
+<img width="349" alt="image" src="https://github.com/janithpet/signaloid-bernoulli/assets/22471198/496f2a8a-56eb-434d-b973-092073c32f8e">
+
 *The `local` version of this code doesn't contain any uncertainty because it is generally only used to debug. All distributions of uncertain values are collapsed to their mean values.*
 
 Other `make` commands include `make clean` to remove all generated files, `make docs` to generate the documentation and `make build` to build the object files and final executable.
