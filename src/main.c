@@ -57,10 +57,9 @@ double calculate_lift(double velocity_top, double velocity_bottom, double air_de
 int main(void) {
 	double velocity_top    = measure_velocity_top();
 	double velocity_bottom = measure_velocity_bottom();
-	double air_density     = measure_airfoil_area();
 	double area            = measure_airfoil_area();
 
-	double lift            = calculate_lift(velocity_top, velocity_bottom, air_density, area);
+	double lift            = calculate_lift(velocity_top, velocity_bottom, AIR_DENSITY, area);
 
 	printf("The lift of the airfoil is %fN.\n", lift);
 	return 0;
