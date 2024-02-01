@@ -3,10 +3,11 @@ CC=gcc
 SRC=src
 BUILD=build
 DOCS=docs
-INCLUDE=include
+INCLUDE=local-include
 
 SOURCES := \
-	uxhw
+	uxhw \
+	pitot-tube
 
 OBJECTS := $(patsubst %,$(BUILD)/%.o,$(SOURCES))
 

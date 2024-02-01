@@ -11,3 +11,20 @@
 \_form#10=16x11:$m^{2}$
 \_form#11=11x10:$N$
 \_form#12=29x14:$kgm^{3}$
+\_form#13=13x10:$\delta h$
+\_form#14=11x9:$\rho_i$
+\_form#15=14x10:$\rho_f$
+\_form#16=8x9:$g$
+\_form#17=13x10:$v_f$
+\_form#18=76x38:\[v = \sqrt{\frac{2g\delta h \rho_i}{\rho_f}}\]
+\_form#19=18x10:$\Delta h$
+\_form#20=80x38:\[v = \sqrt{\frac{2g\Delta h \rho_i}{\rho_f}}\]
+\_form#21=13x6:$m$
+\_form#22=30x11:$ms^{-2}$
+\_form#23=80x38:\[v = \sqrt{\frac{2g\Delta h \rho_i}{\rho}}\]
+\_form#24=68x38:\[v = \sqrt{\frac{2\Delta \rho_i}{\rho}}\]
+\_form#25=16x10:$Pa$
+\_form#26=63x38:\[v = \sqrt{\frac{2\Delta p}{\rho}}\]
+\_form#27=8x6:$v$
+\_form#28=16x13:$\Delta p$
+\_form#29=36x11:$\pm 0.5\%$

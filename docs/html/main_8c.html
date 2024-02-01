@@ -67,29 +67,40 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">main.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="pitot-tube_8h_source.html">pitot-tube.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a7414371c9acf569f41266a43cb03c2fc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a7414371c9acf569f41266a43cb03c2fc">measure_velocity_top</a> (void)</td></tr>
-<tr class="memdesc:a7414371c9acf569f41266a43cb03c2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates the measurement of the velocity of air on the top of an airfoil in <img class="formulaInl" alt="$ms^{-1}$" src="form_8.png" width="30" height="11"/>.  <a href="main_8c.html#a7414371c9acf569f41266a43cb03c2fc">More...</a><br /></td></tr>
+<tr class="memdesc:a7414371c9acf569f41266a43cb03c2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates the measurement of the velocity of air on the top of an airfoil in <img class="formulaInl" alt="$ms^{-1}$" src="form_8.png" width="30" height="11"/> through a pitot tube.  <a href="main_8c.html#a7414371c9acf569f41266a43cb03c2fc">More...</a><br /></td></tr>
 <tr class="separator:a7414371c9acf569f41266a43cb03c2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4499f5f7baddd2dea6f9ae6980b9cc58"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a4499f5f7baddd2dea6f9ae6980b9cc58">measure_velocity_bottom</a> (void)</td></tr>
-<tr class="memdesc:a4499f5f7baddd2dea6f9ae6980b9cc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates the measurement of the velocity of air on the bottom of an airfoil in <img class="formulaInl" alt="$ms^{-1}$" src="form_8.png" width="30" height="11"/>.  <a href="main_8c.html#a4499f5f7baddd2dea6f9ae6980b9cc58">More...</a><br /></td></tr>
+<tr class="memdesc:a4499f5f7baddd2dea6f9ae6980b9cc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates the measurement of the velocity of air on the bottom of an airfoil in <img class="formulaInl" alt="$ms^{-1}$" src="form_8.png" width="30" height="11"/> through a pitot tube.  <a href="main_8c.html#a4499f5f7baddd2dea6f9ae6980b9cc58">More...</a><br /></td></tr>
 <tr class="separator:a4499f5f7baddd2dea6f9ae6980b9cc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3934d8a9d28b992c2532906670beb791"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a3934d8a9d28b992c2532906670beb791">measure_airfoil_area</a> (void)</td></tr>
-<tr class="memdesc:a3934d8a9d28b992c2532906670beb791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates the measurement of the area of the airfoil in <img class="formulaInl" alt="$m^{2}$" src="form_10.png" width="16" height="11"/>.  <a href="main_8c.html#a3934d8a9d28b992c2532906670beb791">More...</a><br /></td></tr>
+<tr class="memdesc:a3934d8a9d28b992c2532906670beb791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates the measurement of the surface area of the airfoil in <img class="formulaInl" alt="$m^{2}$" src="form_10.png" width="16" height="11"/>.  <a href="main_8c.html#a3934d8a9d28b992c2532906670beb791">More...</a><br /></td></tr>
 <tr class="separator:a3934d8a9d28b992c2532906670beb791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae44bcf06b59bb1ad2029cdeaf8c44557"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ae44bcf06b59bb1ad2029cdeaf8c44557">calculate_lift</a> (double velocity_top, double velocity_bottom, double air_density, double area)</td></tr>
 <tr class="memdesc:ae44bcf06b59bb1ad2029cdeaf8c44557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the lift of an airfoil using Bernoulli's Principle.  <a href="main_8c.html#ae44bcf06b59bb1ad2029cdeaf8c44557">More...</a><br /></td></tr>
 <tr class="separator:ae44bcf06b59bb1ad2029cdeaf8c44557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
 <tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a69221ed174f561a3c6949559e7aae4b1"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a69221ed174f561a3c6949559e7aae4b1">AIR_DENSITY</a> = 1.225</td></tr>
+<tr class="separator:a69221ed174f561a3c6949559e7aae4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ec803b6d855fe36b68405c37a194c2"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#af4ec803b6d855fe36b68405c37a194c2">TOP_PRESSURE_DIFFERENCE</a> = 1825.4386486517</td></tr>
+<tr class="separator:af4ec803b6d855fe36b68405c37a194c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7171de64302952017de3c651d496f4ac"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a7171de64302952017de3c651d496f4ac">BOTTOM_PRESSURE_DIFFERENCE</a> = 440.3715965603</td></tr>
+<tr class="separator:a7171de64302952017de3c651d496f4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ae44bcf06b59bb1ad2029cdeaf8c44557" name="ae44bcf06b59bb1ad2029cdeaf8c44557"></a>
@@ -182,9 +193,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Simulates the measurement of the area of the airfoil in <img class="formulaInl" alt="$m^{2}$" src="form_10.png" width="16" height="11"/>. </p>
-<p >Measures the air density in <img class="formulaInl" alt="$kgm^{3}$" src="form_12.png" width="29" height="14"/>.</p>
-<dl class="section return"><dt>Returns</dt><dd>An uncertain measurement of the surface area of the airfoil. </dd></dl>
+<p>Simulates the measurement of the surface area of the airfoil in <img class="formulaInl" alt="$m^{2}$" src="form_10.png" width="16" height="11"/>. </p>
+<dl class="section return"><dt>Returns</dt><dd>A measurement of the surface area of the airfoil. </dd></dl>
 
 </div>
 </div>
@@ -204,7 +214,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Simulates the measurement of the velocity of air on the bottom of an airfoil in <img class="formulaInl" alt="$ms^{-1}$" src="form_8.png" width="30" height="11"/>. </p>
+<p>Simulates the measurement of the velocity of air on the bottom of an airfoil in <img class="formulaInl" alt="$ms^{-1}$" src="form_8.png" width="30" height="11"/> through a pitot tube. </p>
 <dl class="section return"><dt>Returns</dt><dd>An uncertain measurement of the velocity of the air on the bottom of the airfoil. </dd></dl>
 
 </div>
@@ -225,8 +235,51 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Simulates the measurement of the velocity of air on the top of an airfoil in <img class="formulaInl" alt="$ms^{-1}$" src="form_8.png" width="30" height="11"/>. </p>
+<p>Simulates the measurement of the velocity of air on the top of an airfoil in <img class="formulaInl" alt="$ms^{-1}$" src="form_8.png" width="30" height="11"/> through a pitot tube. </p>
 <dl class="section return"><dt>Returns</dt><dd>An uncertain measurement of the velocity of the air on the top of the airfoil. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a69221ed174f561a3c6949559e7aae4b1" name="a69221ed174f561a3c6949559e7aae4b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69221ed174f561a3c6949559e7aae4b1">&#9670;&nbsp;</a></span>AIR_DENSITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double AIR_DENSITY = 1.225</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7171de64302952017de3c651d496f4ac" name="a7171de64302952017de3c651d496f4ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7171de64302952017de3c651d496f4ac">&#9670;&nbsp;</a></span>BOTTOM_PRESSURE_DIFFERENCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double BOTTOM_PRESSURE_DIFFERENCE = 440.3715965603</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4ec803b6d855fe36b68405c37a194c2" name="af4ec803b6d855fe36b68405c37a194c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ec803b6d855fe36b68405c37a194c2">&#9670;&nbsp;</a></span>TOP_PRESSURE_DIFFERENCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double TOP_PRESSURE_DIFFERENCE = 1825.4386486517</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
