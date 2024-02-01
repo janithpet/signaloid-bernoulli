@@ -62,8 +62,8 @@ int main(void) {
 
 	double lift            = calculate_lift(velocity_top, velocity_bottom, AIR_DENSITY, area);
 
-	printf("%d\n", velocity_top);
-	printf("%d\n", velocity_bottom);
+	printf("%f\n", velocity_top);
+	printf("%f\n", velocity_bottom);
 
 	printf("The lift of the airfoil is %fN.\n", lift);
 	return 0;
