@@ -114,12 +114,12 @@ The table below shows the results of these experiments.
 
 | Core | Representation Size / Number of Samples | Autocorrelation | Wasserstein Distance |
 |------|----------------------------------------|-----------------|----------------------|
-| Athens | 4 | Yes | 1.014 |
-| Athens | 64 | Yes | 0.097 |
-| Athens | 256 | Yes | 0.036 |
-| Athens | 2048 | Yes | 0.018 |
-| Athens | 8192 | Yes | 0.011 |
-| Athens | 8192 | No | 3.651 |
+| Athens (C0) | 4 | Yes | 1.014 |
+| Athens (C0)| 64 | Yes | 0.097 |
+| Athens (C0)| 256 | Yes | 0.036 |
+| Athens (C0)| 2048 | Yes | 0.018 |
+| Athens (C0)| 8192 | Yes | 0.011 |
+| Athens (C0)| 8192 | No | 3.651 |
 | Local | 1,000,000 | N.A.| N.A.|
 
 </center>
