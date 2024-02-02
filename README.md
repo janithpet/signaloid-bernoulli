@@ -157,3 +157,4 @@ Using $u_\infty = 34.3$ $ms^{-1}$ and $S = 1$ $m^2$, we get $L_{sim} = 985.74$ $
 
 ## Known Issues
 - The doxygen documentation of the main page is slightly broken because it doesn't seem to easily parse the Latex equations, nor does it handle images correctly.
+- The [`docs/`](docs) folder can be automated into a Github Action so that any changes to the documentation is automatically updated.
