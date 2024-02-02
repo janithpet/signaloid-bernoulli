@@ -6,7 +6,7 @@
 /**
  * @brief Simulates the <a
  * href="https://docs.signaloid.io/docs/hardware-api/inserting-uncertainty/parametric-distributions/uniform-dist/">UxHwDoubleUniformDist
- * from the Signaloid UxHw Hardware API</a>.
+ * from the Signaloid UxHw Hardware API</a>. This functions currently returns the mean of the Uniform distribution.
  *
  * @param min The minimum value of the distribution.
  * @param max The maximum value of the distribution.

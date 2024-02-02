@@ -14,7 +14,7 @@ OBJECTS := $(patsubst %,$(BUILD)/%.o,$(SOURCES))
 LDFLAGS=
 INCLUDE_FLAGS=-I$(INCLUDE)
 
-.PHONY:= \
+.PHONY := \
 	build \
 	run \
 	docs \

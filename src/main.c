@@ -3,9 +3,10 @@
 
 #include "pitot-tube.h"
 
-const double AIR_DENSITY                = 1.225;
-const double TOP_PRESSURE_DIFFERENCE    = 1825.4386486517;
-const double BOTTOM_PRESSURE_DIFFERENCE = 440.3715965603;
+const double AIR_DENSITY                = 1.225;           // kgm^-3
+const double WING_SURFACE_AREA          = 1.0;             // m^2
+const double TOP_PRESSURE_DIFFERENCE    = 1825.4386486517; // Pa
+const double BOTTOM_PRESSURE_DIFFERENCE = 440.3715965603;  // Pa
 
 /**
  * @brief Simulates the measurement of the velocity of air on the top of an airfoil in \f$ms^{-1}\f$ through a pitot
@@ -24,14 +25,6 @@ double measure_velocity_top(void) { return pitot_tube(TOP_PRESSURE_DIFFERENCE, A
  * @return An uncertain measurement of the velocity of the air on the bottom of the airfoil.
  */
 double measure_velocity_bottom(void) { return pitot_tube(BOTTOM_PRESSURE_DIFFERENCE, AIR_DENSITY); }
-
-/**
- * @brief Simulates the measurement of the surface area of the airfoil in
- * \f$m^{2}\f$.
- *
- * @return A measurement of the surface area of the airfoil.
- */
-double measure_airfoil_area(void) { return 1.0; }
 
 /**
  * @brief Calculates the lift of an airfoil using Bernoulli's Principle.
@@ -57,9 +50,8 @@ double calculate_lift(double velocity_top, double velocity_bottom, double air_de
 int main(void) {
 	double velocity_top    = measure_velocity_top();
 	double velocity_bottom = measure_velocity_bottom();
-	double area            = measure_airfoil_area();
 
-	double lift            = calculate_lift(velocity_top, velocity_bottom, AIR_DENSITY, area);
+	double lift            = calculate_lift(velocity_top, velocity_bottom, AIR_DENSITY, WING_SURFACE_AREA);
 
 	printf("The lift of the airfoil is %fN.\n", lift);
 	return 0;
