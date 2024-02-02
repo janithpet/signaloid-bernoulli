@@ -12,19 +12,22 @@ const double BOTTOM_PRESSURE_DIFFERENCE = 440.3715965603;  // Pa
  * @brief Simulates the measurement of the velocity of air on the top of an airfoil in \f$ms^{-1}\f$ through a pitot
  * tube.
  *
+ * @param air_density The density of the air in \f$kgm^{-3}\f$.
  *
  * @return An uncertain measurement of the velocity of the air on the top of the
- * airfoil.
+ * airfoil in \f$ms^{-1}\f$.
  */
-double measure_velocity_top(void) { return pitot_tube(TOP_PRESSURE_DIFFERENCE, AIR_DENSITY); }
+double measure_velocity_top(double air_density) { return pitot_tube(TOP_PRESSURE_DIFFERENCE, air_density); }
 
 /**
  * @brief Simulates the measurement of the velocity of air on the bottom of an airfoil in \f$ms^{-1}\f$ through a pitot
  * tube.
  *
- * @return An uncertain measurement of the velocity of the air on the bottom of the airfoil.
+ * @param air_density The density of the air in \f$kgm^{-3}\f$.
+ *
+ * @return An uncertain measurement of the velocity of the air on the bottom of the airfoil in \f$ms^{-1}\f$.
  */
-double measure_velocity_bottom(void) { return pitot_tube(BOTTOM_PRESSURE_DIFFERENCE, AIR_DENSITY); }
+double measure_velocity_bottom(double air_density) { return pitot_tube(BOTTOM_PRESSURE_DIFFERENCE, air_density); }
 
 /**
  * @brief Calculates the lift of an airfoil using Bernoulli's Principle.
@@ -48,8 +51,8 @@ double calculate_lift(double velocity_top, double velocity_bottom, double air_de
 }
 
 int main(void) {
-	double velocity_top    = measure_velocity_top();
-	double velocity_bottom = measure_velocity_bottom();
+	double velocity_top    = measure_velocity_top(AIR_DENSITY);
+	double velocity_bottom = measure_velocity_bottom(AIR_DENSITY);
 
 	double lift            = calculate_lift(velocity_top, velocity_bottom, AIR_DENSITY, WING_SURFACE_AREA);
 

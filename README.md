@@ -71,7 +71,7 @@ where $\rho$ is the density of the fluid.
 - $p^{stag}$ is the stagnation pressure of the fluid. This is the pressure value we obtain if we measure the pressure of the fluid when it is not moving. This is also called the *total pressure* of the fluid.
 
 ### Pitot tubes
-A pitot tube is a device that measures the velocity of a moving fluid at a point. It does this by measuring the difference $\Delta p_{pitot}$ between the static pressure $p$ and the stagnation pressure $p^{stag}$. According to Bernoulli's Principle, this gives us the dynamic pressure of the fluid at the measured point. Therefore, $u$ is given by:
+A pitot tube is a device that measures the velocity of a moving fluid at a point. It does this by measuring the difference $\Delta p_{pitot} = p^{stag} - p$ between the stagnation pressure $p^{stag}$ and the static pressure $p$. According to Bernoulli's Principle, this gives us the dynamic pressure of the fluid at the measured point. Therefore, $u$ is given by:
 
 $$u = \sqrt{\frac{2\Delta p_{pitot}}{\rho}}.$$
 
