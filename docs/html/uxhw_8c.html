@@ -79,93 +79,11 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a853ce871870cf4898607d36e03dcbd62"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uxhw_8c.html#a853ce871870cf4898607d36e03dcbd62">UxHwDoubleDistFromSamples</a> (double *samples, size_t samplesCount)</td></tr>
-<tr class="memdesc:a853ce871870cf4898607d36e03dcbd62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates the <a href="https://docs.signaloid.io/docs/hardware-api/inserting-uncertainty/dist-from-samples/">UxHwDoubleDistFromSamples from the Signaloid UxHw Hardware API</a>.  <a href="uxhw_8c.html#a853ce871870cf4898607d36e03dcbd62">More...</a><br /></td></tr>
-<tr class="separator:a853ce871870cf4898607d36e03dcbd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d09f4feaf084cf7ffefe1a1f0d70f19"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uxhw_8c.html#a0d09f4feaf084cf7ffefe1a1f0d70f19">UxHwDoubleUniformDist</a> (double min, double max)</td></tr>
 <tr class="memdesc:a0d09f4feaf084cf7ffefe1a1f0d70f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates the <a href="https://docs.signaloid.io/docs/hardware-api/inserting-uncertainty/parametric-distributions/uniform-dist/">UxHwDoubleUniformDist from the Signaloid UxHw Hardware API</a>.  <a href="uxhw_8c.html#a0d09f4feaf084cf7ffefe1a1f0d70f19">More...</a><br /></td></tr>
 <tr class="separator:a0d09f4feaf084cf7ffefe1a1f0d70f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc318e9aee1352d8b7a323b3987f3a9f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uxhw_8c.html#abc318e9aee1352d8b7a323b3987f3a9f">UxHwDoubleGaussDist</a> (double mean, double stddev)</td></tr>
-<tr class="memdesc:abc318e9aee1352d8b7a323b3987f3a9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates the <a href="https://docs.signaloid.io/docs/hardware-api/inserting-uncertainty/parametric-distributions/gauss-dist/">UxHwDoubleGaussDist from the Signaloid UxHw Hardware API</a>.  <a href="uxhw_8c.html#abc318e9aee1352d8b7a323b3987f3a9f">More...</a><br /></td></tr>
-<tr class="separator:abc318e9aee1352d8b7a323b3987f3a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a853ce871870cf4898607d36e03dcbd62" name="a853ce871870cf4898607d36e03dcbd62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a853ce871870cf4898607d36e03dcbd62">&#9670;&nbsp;</a></span>UxHwDoubleDistFromSamples()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double UxHwDoubleDistFromSamples </td>
-          <td>(</td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>samples</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>sampleCount</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Simulates the <a href="https://docs.signaloid.io/docs/hardware-api/inserting-uncertainty/dist-from-samples/">UxHwDoubleDistFromSamples from the Signaloid UxHw Hardware API</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">samples</td><td>An array of samples from the underlying distribution. </td></tr>
-    <tr><td class="paramname">sampleCount</td><td>The number of samples. I.e the length of the <code>samples</code> array .</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Currently returns average of the samples. </dd></dl>
-
-</div>
-</div>
-<a id="abc318e9aee1352d8b7a323b3987f3a9f" name="abc318e9aee1352d8b7a323b3987f3a9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc318e9aee1352d8b7a323b3987f3a9f">&#9670;&nbsp;</a></span>UxHwDoubleGaussDist()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double UxHwDoubleGaussDist </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>mean</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>stddev</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Simulates the <a href="https://docs.signaloid.io/docs/hardware-api/inserting-uncertainty/parametric-distributions/gauss-dist/">UxHwDoubleGaussDist from the Signaloid UxHw Hardware API</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mean</td><td>The mean of the distribution. </td></tr>
-    <tr><td class="paramname">stddev</td><td>The standard deviation of the distribution.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The mean. </dd></dl>
-
-</div>
-</div>
 <a id="a0d09f4feaf084cf7ffefe1a1f0d70f19" name="a0d09f4feaf084cf7ffefe1a1f0d70f19"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d09f4feaf084cf7ffefe1a1f0d70f19">&#9670;&nbsp;</a></span>UxHwDoubleUniformDist()</h2>
 
