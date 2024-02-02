@@ -128,6 +128,7 @@ Below, we have plotted the distributions. See the captions for the configuration
 
 <figure>
    <img width="437" alt="image" src="https://github.com/janithpet/signaloid-bernoulli/assets/22471198/9fd0816a-d3a5-4679-99c6-170d7c62e57f">
+
   <figcaption>Athens (C0), Representation size: 4, Autocorrelation: Yes</figcaption>
 </figure>
 
