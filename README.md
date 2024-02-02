@@ -125,16 +125,11 @@ The table below shows the results of these experiments.
 </center>
 
 Below, we have plotted the distributions. See the captions for the configuration details.
-
-<center>
   
 <figure>
    <img width="874" alt="image" src="https://github.com/janithpet/signaloid-bernoulli/assets/22471198/9fd0816a-d3a5-4679-99c6-170d7c62e57f">
   <figcaption>Athens (C0), Representation size: 4, Autocorrelation: Yes</figcaption>
-
 </figure>
-
-</center>
 
 ### Analysis
 - We can first note that as the representation size increases, the Wasserstein distance to the ground truth decreases.
