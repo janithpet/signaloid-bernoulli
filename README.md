@@ -54,7 +54,7 @@ The problem at hand is to use Bernoulli's Principle to calculate the lift genera
 ### Assumptions about the pitot tubes
 - They operate using a differential pressure sensor. Therefore, they can directly measure the difference between the static pressure and the stagnation pressure (see the [Bernoulli's Principle](#bernoullis-principle) section below).
 - They have a 0.5% full-scale error [[1]](https://www.surreysensors.com/article/uncertain-pitot-static-probe/).
-- They have a range $0$-$3650$ $Pa$.
+- They have a range $0$- $3650$ $Pa$.
 
 ## Theory
 ### Bernoulli's Principle
