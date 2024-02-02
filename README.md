@@ -127,6 +127,12 @@ The table below shows the results of these experiments.
 Below, we have plotted the distributions. See the captions for the configuration details.
 
 <center>
+  
+<figure>
+  ![athensac-bernoulli-pdf-4](https://github.com/janithpet/signaloid-bernoulli/assets/22471198/9fd0816a-d3a5-4679-99c6-170d7c62e57f)
+  <figcaption>Athens (C0), Representation size: 4, Autocorrelation: Yes</figcaption>
+
+</figure>
 
 </center>
 
